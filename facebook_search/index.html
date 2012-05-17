@@ -1,0 +1,40 @@
+<html>
+
+  <head>
+    <script type="text/javascript" src="http://cs.adomado.com/dist/js.class3/core.js"></script>
+    <script type="text/javascript" src="http://cs.adomado.com/dist/fb/fb_auth.js"></script>
+  </head>
+
+  <body>
+    <script>
+      var appId = '__APP_ID__';
+      var fbAppId = '273794729329086';
+
+      function init() {
+        if(!_adomado_global_api){
+          return setTimeout(init, 1000);
+        }
+
+        new FBAuth(fbAppId, document.location.href, "", function(accessToken) {
+
+          new IJAppApi.v1({
+            appId : window.appId,
+            onReadyCb : function(api) {
+              api.setData("fbAccessToken", accessToken);
+              setTimeout("window.close()", 2000);              
+            } // onReadyCb
+          }); // v1
+
+        }); // FBAuth
+      }
+
+      setTimeout(init, 5000);
+
+    </script>
+
+    <div style="margin-top:200px; text-align:center; font-size:32px; font-family:verdana;">
+      <img src="http://localhost/javascript/search_likes/assets/spinner_big.gif"><br/>Connecting with Facebook, please wait...
+    </div>
+  </body>
+
+</html>

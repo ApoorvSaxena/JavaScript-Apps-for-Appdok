@@ -1,0 +1,71 @@
+<!--[if IE 6]>
+	<style type="text/css" media="screen">
+	ul.thumb li img.hover {
+	margin-top:15px;
+	background:url(thumb_bg.gif) no-repeat center center;
+	border: none;
+}
+ul.thumb {list-style-type:none;font-size:0.7em;}
+ul.thumb li .title{color:#fff;width:185px;height:50px;margin:0;font-weight:900;background:url(title.gif) no-repeat center center;padding:17px 0 0 0;text-align:center;}
+	</style>
+<![endif]-->
+ul.thumb {float: left;list-style: none;margin: 0; padding: 10px;width: 900px;background-color: white;font-size:10px;}
+ul.thumb li {margin: 0; padding: 10px;float: left;position: relative;width: 110px;height: 110px;}
+ul.thumb li img {width: 100px; height: 100px;border: 1px solid #ddd;padding: 5px;background: #f0f0f0;position: absolute;left: 0; top: 0;-ms-interpolation-mode: bicubic; }
+ul.thumb li img.hover {margin-top:15px;background:url('http://localhost/javascript/search_likes/assets/thumb_bg.PNG') no-repeat center center;border: none;}
+ul.thumb li .title{position:absolute;width:185px;height:35px;margin:0;font-weight:900;background:url('http://localhost/javascript/search_likes/assets/blue.PNG') no-repeat center center;padding:17px 0 0 0;text-align:center; color: #fff; }
+
+ul.links {list-style-type:none;font-size:20px;}
+ul.links li .title{}
+ul.links {}
+ul.links li {
+	margin-top:50px;
+	display:block;
+}
+ul.links li img {vertical-align:text-top;display:block;position:absolute;height:90px;width:100px;}
+ul.links li:hover {background-color:#EBF2FC;}
+ul.links li a {text-decoration:none;}
+ul.links li h1{
+    font-size: 0.9em;
+	padding: 5px 0;
+	margin-left:120px;
+	border-bottom: 1px dashed #333;
+	color: #03C;}
+ul.links li p{
+	color: #000;
+	font-size: 0.7em;
+	margin-left:120px;
+	font-weight: normal;
+	line-height: 1.6em;
+}
+
+.myButton {
+	-moz-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #ffffff;
+	box-shadow:inset 0px 1px 0px 0px #ffffff;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #dfdfdf) );
+	background:-moz-linear-gradient( center top, #ededed 5%, #dfdfdf 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#ededed', endColorstr='#dfdfdf');
+	background-color:#ededed;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #dcdcdc;
+	display:inline-block;
+	color:#777777;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 100px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #ffffff;
+}.myButton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #dfdfdf), color-stop(1, #ededed) );
+	background:-moz-linear-gradient( center top, #dfdfdf 5%, #ededed 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#dfdfdf', endColorstr='#ededed');
+	background-color:#dfdfdf;
+	cursor:pointer;
+}.myButton:active {
+	position:relative;
+	top:1px;
+}
